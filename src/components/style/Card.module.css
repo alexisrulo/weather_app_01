@@ -1,0 +1,123 @@
+.card {
+ width: 400px;
+ min-width: 380px;
+ height: 250px;
+ margin: 8px;
+ display: flex;
+ flex-direction: column;
+ border-radius: 16px;
+ background-color: #FBDA61;
+ background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+ backdrop-filter: blur(40px);
+ box-shadow: 1px 1px 2px;
+ text-align: justify;
+ 
+}
+
+.button{
+    display: flex;
+    justify-content: flex-end;
+    margin: 16px;
+}
+.button button{
+    border-radius: 4px;
+    background-color: transparent;
+    border: none ;
+}
+.card .content{
+    display: flex;
+
+}
+.card .text{
+    margin: -32px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: space-between;
+}
+.text h3{
+    font-weight: bold;
+    min-width: fit-content;
+}
+.text h2{
+    font-weight: bold;
+    width: 190px;
+}
+.card .img{
+    margin: auto 8px;
+    border-left: 1px solid black;
+}
+.card .maxmin{
+    display: flex;
+    gap: 30px;
+    text-align: center;
+    flex-direction: row-reverse;
+    
+}
+
+.card .label{
+    font-weight: bold;
+    
+}
+.card .value {
+    width: 40px;;
+}
+
+.mainCard{
+    color:  rgba(0, 0, 0, 0.9);
+    padding: 48px;
+}
+.mainCard .contentCard{
+    display: flex;
+    flex-direction: row;
+    min-width: 310px;
+    height: fit-content;
+}
+
+.mainCard .content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.mainCard .content .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 50px;
+}
+.mainCard .content .text .maxmin{
+    display: flex;
+    gap: 20px;
+    text-align: justify;
+    flex-direction:column-reverse;
+}
+
+.mainCard .text h3{
+    font-size: 60px;
+
+}
+.mainCard .text h2{
+    font-size: 60px;
+}
+.mainCard .button{
+    display: none;
+}
+@media (max-width: 640px){
+    .mainCard{
+    width: 100%;}
+
+    .mainCard .content{
+        flex-direction:column;
+    }
+    
+    .card{
+    max-width: 640px;
+    width: 100vh;
+    }
+    
+    
+}
+.content{
+    display: flex;
+    justify-content: space-around;
+}
