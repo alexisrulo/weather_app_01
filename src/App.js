@@ -10,6 +10,7 @@ import styles from "./components/style/Card.module.css";
 function App() {
   const [ciudadess, setCities] = React.useState([]);
   const apiKey = process.env.REACT_APP_APIKEY;
+  const IDontknow = 'Hola'
 
   function onSearch(ciudad) {
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}&units=metric`)
